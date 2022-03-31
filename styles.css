@@ -1,0 +1,66 @@
+:root {
+    --test-border: 1px solid black;  
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header, h1, h4, ul, li, main, article, section, p, span {
+    border: var(--test-border);
+}
+
+h1, h4 {
+    display: inline-block;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0px;
+}
+
+span:first-of-type {
+    font-size: 48px;
+    position: relative;
+    height: 60%;
+    width:fit-content;
+}
+
+
+main > 
+article:nth-of-type(1) > 
+section:nth-of-type(3) > 
+p::first-letter 
+{
+    padding: 10px 5px 0 0;
+    float: left;
+    width: 0.7em;
+    font-size: 400%;
+    font-family: algerian, courier;
+    line-height: 80%;
+}
+
+
+main > 
+article:nth-of-type(1) > 
+section:nth-of-type(4)  {
+    text-align: right;
+}
+
+main > 
+article:nth-of-type(1) > 
+section:nth-of-type(4) > 
+p
+{
+    position: relative;
+    left: 85%;
+    width: fit-content;
+}
